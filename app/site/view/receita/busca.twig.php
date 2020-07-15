@@ -9,7 +9,7 @@
 
     <hr>
 
-    <p>Exibindo <span class="font-weight-bold">{{totalResultado}}</span> resultado(s).</p>
+    <p>Exibindo <span class="font-weight-bold color-pink">{{totalResultado}}</span> resultado(s).</p>
     
     {% for receita in receitas %}
     
