@@ -16,7 +16,6 @@
 {% block body %}{% endblock %}
 
 <script src="{{BASE}}assets/js/script.js"></script>
-
 {% block scripts %}{% endblock %}
 </body>
 
