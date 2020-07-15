@@ -8,19 +8,30 @@
 
     <hr>
     
-    <form action="{{BASE}}?url=insert" method="post" id="frmNovaReceita">
+    <form action="{{BASE}}?url=insert" method="post" enctype="multipart/form-data" id="frmNovaReceita">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="txtTitulo">Título</label>
                     <input type="text" class="form-control" id="txtTitulo" name="txtTitulo" value="">
                 </div>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="txtTags">Tags</label>
                     <input type="text" class="form-control" id="txtTags" name="txtTags" value="">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="txtTags">Thumb:</label>
+                    <br>
+                    <span class="btn btn-azul fileinput-button">
+                        <span>Selecione um arquivo</span>
+                        <input type="file" id="txtThumb" name="txtThumb" value="">
+                    </span>
                 </div>
             </div>
         </div>

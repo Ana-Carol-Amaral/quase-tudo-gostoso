@@ -31,6 +31,21 @@ p {
     color: #FFF;
 }
 
+.btn-azul{
+    background-color: #44b3ca !important;
+    color: #FFF;
+}
+
+.btn-azul:hover{
+    background-color: #16788b !important;
+    color: #FFF;
+}
+
+.btn-azul:active{
+    background-color: #053741!important;
+    color: #FFF;
+}
+
 .max-width {
     max-width: var(--max-width);
     width: 100%;
@@ -47,4 +62,20 @@ p {
 
 .color-pink{
     color: #F3969A;
+}
+
+ .fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
 }
