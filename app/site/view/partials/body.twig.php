@@ -7,7 +7,7 @@
     <title>{% block title %}{% endblock %} - Quase Tudo Gostoso</title>
     <link rel="stylesheet" href="{{BASE}}assets/css/style.css">
     <link rel="stylesheet" href="{{BASE}}assets/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="{{BASE}}assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{BASE}}assets/img/favicon.ico">
 </head>
 
 <body>
