@@ -44,7 +44,7 @@
 
         <div class="row">
             <div class="col-md-12 text-right">
-                <button class="btn btn-success" type="submit">Cadastrar</button>
+                <button class="btn btn-pink" type="submit">Cadastrar</button>
             </div>
         </div>
     </form>

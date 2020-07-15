@@ -11,8 +11,8 @@
 
     <p>Publicado em: {{receita.dataPublicacao | date(DATE_TIME) }}</p>
     
-    <a href="{{BASE}}?url=editar&id={{receita.id}}" class="btn btn-sm btn-warning">Editar</a>
-    <a href="{{BASE}}?url=delete&id={{receita.id}}" class="btn btn-sm btn-danger" onclick="return confirm('Deseja realmente deletar?')">Delete</a>
+    <a href="{{BASE}}?url=editar&id={{receita.id}}" class="btn btn-sm btn-info">Editar</a>
+    <a href="{{BASE}}?url=delete&id={{receita.id}}" class="btn btn-sm btn-primary" onclick="return confirm('Deseja realmente deletar?')">Delete</a>
     
     <hr>
     
@@ -25,7 +25,7 @@
     <div>
         <h3>Tags</h3>
         {% for t in tags %}
-        <span class="badge badge-primary">{{t}}</span>
+        <span class="badge badge-secondary">{{t}}</span>
         {% endfor %}
     </div>
     

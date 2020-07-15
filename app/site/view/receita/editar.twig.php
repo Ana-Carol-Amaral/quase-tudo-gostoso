@@ -45,7 +45,7 @@
 
         <div class="row">
             <div class="col-md-12 text-right">
-                <button class="btn btn-success" type="submit">Editar</button>
+                <button class="btn btn-pink" type="submit">Editar</button>
             </div>
         </div>
     </form>
