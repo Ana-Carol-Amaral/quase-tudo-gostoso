@@ -31,7 +31,7 @@
                     <br>
                     <span class="btn btn-azul fileinput-button">
                         <span>Selecione um arquivo</span>
-                        <input type="file" id="txtThumb" name="txtThumb" value="">
+                        <input type="file" id="txtThumb" name="txtThumb" accept="image/*" value="{{receita.thumb}}">
                     </span>
                 </div>
             </div>

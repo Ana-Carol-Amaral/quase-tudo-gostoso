@@ -6,9 +6,9 @@ define('HOST', 'http://localhost/quase-tudo-gostoso/');
 define('DATE_TIME', 'd/m/Y H:i:s');
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '1234');
-define('DB_NAME', 'qt_gostoso');
+define('DB_USER', 'acarol_tk');
+define('DB_PASS', 'RycjSr34UEs9WIz');
+define('DB_NAME', 'acarol_tk');
 
 $router = [
     /* VIEW */
