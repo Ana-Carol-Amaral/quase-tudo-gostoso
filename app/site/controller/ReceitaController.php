@@ -81,6 +81,10 @@ class ReceitaController extends Controller
     {
         $receita = $this->getInput();
 
+        $fileName = \app\classes\Upload::upload($_FILES['fileThumb']);
+
+        $receita->setThumb($fileName);
+
         $result = $this->receitaModel->insert($receita);
 
         if ($result <= 0) {

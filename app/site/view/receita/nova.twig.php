@@ -26,11 +26,11 @@
 
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="txtTags">Thumb:</label>
+                    <label for="fileThumb">Thumb:</label>
                     <br>
                     <span class="btn btn-azul fileinput-button">
                         <span>Selecione um arquivo</span>
-                        <input type="file" id="txtThumb" name="txtThumb" accept="image/*" value="">
+                        <input type="file" id="fileThumb" name="fileThumb" accept="image/*" value="">
                     </span>
                 </div>
             </div>
