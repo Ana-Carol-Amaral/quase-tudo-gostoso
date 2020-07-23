@@ -5,7 +5,7 @@ define('HOST', 'http://localhost/quase-tudo-gostoso/');
 
 define('DATE_TIME', 'd/m/Y H:i:s');
 
-define('IMAGE_PATH', 'resources/thumb/');
+define('IMAGE_PATH', 'resources/');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
@@ -17,6 +17,7 @@ $router = [
     'home' => 'HomeController@index',
     'nova' => 'ReceitaController@nova',
     'editar' => 'ReceitaController@editar',
+    'thumb' => 'ReceitaController@thumb',
     'ver' => 'ReceitaController@ver',
     'busca' => 'ReceitaController@busca',
     /* INTERNAL */

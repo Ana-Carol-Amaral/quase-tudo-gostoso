@@ -16,7 +16,7 @@ class Upload
 
         if(!move_uploaded_file($file['tmp_name'], IMAGE_PATH . $fileName))
             return null;
-
+        
         return $fileName;
     }
 

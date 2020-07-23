@@ -12,7 +12,8 @@
     <p>Publicado em: {{receita.dataPublicacao | date(DATE_TIME) }}</p>
     
     <a href="{{BASE}}?url=editar&id={{receita.id}}" class="btn btn-sm btn-info">Editar</a>
-    <a href="{{BASE}}?url=delete&id={{receita.id}}" class="btn btn-sm btn-primary" onclick="return confirm('Deseja realmente deletar?')">Delete</a>
+    <a href="{{BASE}}?url=thumb&id={{receita.id}}" class="btn btn-sm btn-primary">Thumb</a>
+    <a href="{{BASE}}?url=delete&id={{receita.id}}" class="btn btn-sm btn-danger" onclick="return confirm('Deseja realmente deletar?')">Delete</a>
     
     <hr>
     
