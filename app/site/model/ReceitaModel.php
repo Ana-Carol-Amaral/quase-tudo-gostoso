@@ -45,6 +45,17 @@ class ReceitaModel
         return $this->pdo->ExecuteNonQuery($sql, $params);
     }
 
+    public function updateThumb(string $thumb, int $receitaId)
+    {
+        $sql = 'UPDATE receita SET thumb = :thumb WHERE id = :id';
+        $params = [
+            ':id' => $receitaId,
+            ':thumb' => $thumb
+        ];
+
+        return $this->pdo->ExecuteNonQuery($sql, $params);
+    }
+
     public function delete(int $id)
     {
         $sql = 'DELETE FROM receita WHERE id = :id';

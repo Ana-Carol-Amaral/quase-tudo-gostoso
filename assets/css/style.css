@@ -32,17 +32,17 @@ p {
 }
 
 .btn-azul{
-    background-color: #44b3ca !important;
+    background-color: #348ea0 !important;
     color: #FFF;
 }
 
 .btn-azul:hover{
-    background-color: #16788b !important;
+    background-color: #053741 !important;
     color: #FFF;
 }
 
 .btn-azul:active{
-    background-color: #053741!important;
+    background-color: black !important;
     color: #FFF;
 }
 

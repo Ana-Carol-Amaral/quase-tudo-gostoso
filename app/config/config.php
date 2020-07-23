@@ -23,5 +23,6 @@ $router = [
     /* INTERNAL */
     'delete' => 'ReceitaController@delete',
     'insert' => 'ReceitaController@insert',
-    'update' => 'ReceitaController@update'
+    'update' => 'ReceitaController@update',
+    'updateThumb' => 'ReceitaController@updateThumb'
 ];

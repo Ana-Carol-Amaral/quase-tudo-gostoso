@@ -12,7 +12,15 @@ class Upload
 
         $fileName = uniqid('', true) . '-' . $file['name'];
 
-        $fileName = strtolower(trim($fileName));
+        $fileName = strtolower(str_replace([
+            ' ',
+            '(',
+            ')',
+            '[',
+            ']',
+            '+',
+            ','
+        ], '', $fileName));
 
         if(!move_uploaded_file($file['tmp_name'], IMAGE_PATH . $fileName))
             return null;

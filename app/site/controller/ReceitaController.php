@@ -57,6 +57,15 @@ class ReceitaController extends Controller
         ]);
     }
 
+    public function thumb()
+    {
+        $id = get('id', FILTER_SANITIZE_NUMBER_INT);
+
+        $this->view('receita/thumb', [
+            'id' => $id
+        ]);
+    }
+
     public function busca()
     {
         $termo = strtolower(get('termo'));
@@ -99,9 +108,15 @@ class ReceitaController extends Controller
     {
         $id = get('id', FILTER_SANITIZE_NUMBER_INT);
 
+        $receita = $this->receitaModel->readById($id);
+
         if (!$this->receitaModel->delete($id)) {
             $this->showMessage('Erro', 'Houve um erro ao tentar deletar, tente novamente mais tarde.');
             return;
+        }
+
+        if($receita->getThumb() !== null){
+            unlink(IMAGE_PATH . $receita->getThumb());
         }
 
         redirect(BASE);
@@ -117,6 +132,36 @@ class ReceitaController extends Controller
         }
 
         redirect(BASE . '?url=editar&id=' . get('id'));
+    }
+
+    public function updateThumb()
+    {
+        $id = get('id', FILTER_SANITIZE_NUMBER_INT);
+
+        $receita = $this->receitaModel->readById($id);
+
+        if($receita->getId() == null){
+            $this->showMessage('Erro', 'Erro ao tentar enviar a thumb, tente novamente mais tarde.');
+            return;
+        }
+
+        $fileName = \app\classes\Upload::upload($_FILES['fileThumb']);
+    
+        if($fileName == null){
+            $this->showMessage('Erro', 'Erro ao tentar enviar a thumb, tente novamente mais tarde.');
+            return;
+        }
+
+        if(!$this->receitaModel->updateThumb($fileName, $receita->getId())){
+            unlink(IMAGE_PATH . $fileName);
+            $this->showMessage('Erro', 'Erro ao tentar alterar a thumb, tente novamente mais tarde.');
+            return;
+        }
+
+        if($receita->getThumb() !== null){
+            unlink(IMAGE_PATH . $receita->getThumb());
+            redirect(BASE . '?url=ver&id=' . $receita->getId());
+        }
     }
 
     private function getInput()

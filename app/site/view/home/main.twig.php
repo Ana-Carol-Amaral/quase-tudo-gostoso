@@ -1,5 +1,7 @@
 {% extends 'partials/body.twig.php' %}
 
+{% block title %}Home{% endblock %}
+
 {% block body %}
 <div class="max-width">
     <h1>HOME</h1>
