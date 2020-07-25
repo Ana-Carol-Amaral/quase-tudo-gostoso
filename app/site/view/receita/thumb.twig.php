@@ -16,7 +16,7 @@
                     <br>
                     <span class="btn btn-azul fileinput-button">
                         <span>Selecione um arquivo</span>
-                        <input type="file" id="fileThumb" name="fileThumb" accept="image/*" value="">
+                        <input type="file" class="form-control-file" id="fileThumb" name="fileThumb" accept="image/*" value="">
                     </span>
                 </div>
             </div>

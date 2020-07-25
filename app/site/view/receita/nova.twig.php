@@ -8,7 +8,7 @@
 
     <hr>
     
-    <form action="{{BASE}}?url=insert" method="post" enctype="multipart/form-data" id="frmNovaReceita">
+    <form action="{{BASE}}?url=insert" method="post" id="frmNovaReceita" enctype="multipart/form-data">
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
@@ -30,7 +30,7 @@
                     <br>
                     <span class="btn btn-azul fileinput-button">
                         <span>Selecione um arquivo</span>
-                        <input type="file" id="fileThumb" name="fileThumb" accept="image/*" value="">
+                        <input type="file" class="form-control-file" id="fileThumb" name="fileThumb" accept="image/*" value="">
                     </span>
                 </div>
             </div>
